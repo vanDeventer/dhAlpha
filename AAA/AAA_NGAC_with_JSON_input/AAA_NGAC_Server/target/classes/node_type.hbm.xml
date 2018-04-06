@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping">
+
+
+
+<hibernate-mapping>
+   <class name="com.aaa_ngac_demo.AAA_NGAC_Server.ngac_database.node_type" table="node_type">
+      <meta attribute="class-description">
+         This class contains the table detail. 
+      </meta>
+      <id  name="id" type="int" column="nodetype_id">
+         <generator class="native"/>
+      </id>
+      <property name="name" column="name" type="string"/>
+      <property name="description" column="description" type="string"/>
+   </class>
+</hibernate-mapping>
+
+

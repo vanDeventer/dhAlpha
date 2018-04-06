@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping">
+
+<hibernate-mapping>
+  <class name="com.aaa_ngac_demo.AAA_NGAC_Server.ngac_database.assignment" table="assignment">
+                <id  name="id" type="int" column="assignment_id">
+         <generator class="native"/>
+      </id>
+      <property name="start_node_id" column="start_node_id" type="int"/>
+      <property name="end_node_id" column="end_node_id" type="int"/>
+      <property name="depth" column="depth" type="int"/>
+      <property name="assignment_path_id" column="assignment_path_id" type="int"/>
+
+   
+   </class>  
+</hibernate-mapping>

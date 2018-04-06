@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+      <class name="com.aaa_ngac_demo.AAA_NGAC_Server.ngac_database.association" table="association">
+      <id  name="id" type="int" column="association_id">
+        <generator class="native"/>
+      </id>
+      <property name="ua_id" column="ua_id" type="int"/>
+           
+      <many-to-one name="operation_id" class="com.aaa_ngac_demo.AAA_NGAC_Server.ngac_database.operation"
+            column="operation_id" unique="true" not-null="true"
+            cascade="all" />
+            
+      <property name="oa_id" column="oa_id" type="int"/>
+    </class>
+</hibernate-mapping>

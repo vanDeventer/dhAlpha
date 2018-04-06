@@ -1,0 +1,8 @@
+com\aaa_ngac_demo\AAA_NGAC_Producer\AccountingInfo.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\get_temp.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\AcceptedTokens.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\get_status.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\JWT\JWT_Verifier.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\RequestHandler.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\Producer.class
+com\aaa_ngac_demo\AAA_NGAC_Producer\Definitions.class

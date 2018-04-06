@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" sourcepath="M2_REPO/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/bitbucket/b_c/jose4j/0.6.2/jose4j-0.6.2.jar" sourcepath="M2_REPO/org/bitbucket/b_c/jose4j/0.6.2/jose4j-0.6.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/californium/californium-core/2.0.0-SNAPSHOT/californium-core-2.0.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/eclipse/californium/californium-core/2.0.0-SNAPSHOT/californium-core-2.0.0-SNAPSHOT-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/californium/element-connector/2.0.0-SNAPSHOT/element-connector-2.0.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/eclipse/californium/element-connector/2.0.0-SNAPSHOT/element-connector-2.0.0-SNAPSHOT-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/w3c/dom/2.3.0-jaxb-1.0.6/dom-2.3.0-jaxb-1.0.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/californium/scandium/2.0.0-SNAPSHOT/scandium-2.0.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/eclipse/californium/scandium/2.0.0-SNAPSHOT/scandium-2.0.0-SNAPSHOT-sources.jar"/>
+</classpath>

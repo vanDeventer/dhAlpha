@@ -1,0 +1,44 @@
+{
+"ArrowheadCloud":{
+	"Operator": "operatorA",
+	"CloudName": "Cloud_1",
+	"AuthenticationInfo": "A",
+	"ArrowheadSystem" :
+	[
+		{"NodeType": "User", "ID": "1", "Name": "Blinder_sys" , "Desc": "User: Blinder sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Blinder_sys"},
+		{"NodeType": "User", "ID": "2", "Name": "Heating_sys" , "Desc": "User: Heating sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Heating_sys"},
+		{"NodeType": "User", "ID": "3", "Name": "Owner_user" , "Desc": "User: owner user", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Owner_user"},
+		{"NodeType": "Obj", "ID": "4", "Name": "Temperature_sensor1" , "Desc": "Object: Temperature sensor 1", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor1"},
+		{"NodeType": "Obj", "ID": "5", "Name": "Temperature_sensor2" , "Desc": "Object: Temperature sensor 2", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor2"},
+		{"NodeType": "Obj", "ID": "6", "Name": "Central_sys" , "Desc": "Object:Central sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Central_sys"},
+		{"NodeType": "U_attr", "ID": "7", "Name": "House_sys" , "Desc": "Attribute: House sys"},
+		{"NodeType": "U_attr", "ID": "8", "Name": "Administrator" , "Desc": "Attribute: Administrator"},
+		{"NodeType": "O_attr", "ID": "9", "Name": "Outside" , "Desc": "Attribute: Outside"},
+		{"NodeType": "O_attr", "ID": "10", "Name": "Inside" , "Desc": "Attribute:Inside"},
+		{"NodeType": "O_attr", "ID": "11", "Name": "Status" , "Desc": "Attribute: Status"},
+		{"NodeType": "O_attr", "ID": "12", "Name": "Temperatures" , "Desc": "Attribute: Temperatures"},
+	],
+	"ArrowheadService":
+	[
+		{"NodeType": "Oper", "ID": "13", "Name": "get_temp" , "Desc": "Operation:Read the temperature", "Metadata": "get_temp metadata"},
+		{"NodeType": "Oper", "ID": "14", "Name": "get_status" , "Desc": "Operation:Read the status", "Metadata": "get_status metadata"},
+	],
+	"Assignment":
+	[
+		{"node1": "1", "node2": "7"},
+		{"node1": "2", "node2": "7"},
+		{"node1": "3", "node2": "8"},
+		{"node1": "4", "node2": "9"},
+		{"node1": "5", "node2": "10"},
+		{"node1": "9", "node2": "12"},
+		{"node1": "10", "node2": "12"},
+		{"node1": "6", "node2": "11"}
+
+	],
+	"Association":
+	[
+		{"node1": "7", "node2": "12", "ServiceName": "get_temp"},
+		{"node1": "8", "node2": "11", "ServiceName": "get_status"}
+	]
+	}
+}
