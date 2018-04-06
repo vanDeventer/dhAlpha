@@ -5,14 +5,14 @@
 	"AuthenticationInfo": "A",
 	"ArrowheadSystem" :
 	[
-		{"NodeType": "User", "ID": "1", "Name": "Blinder_sys" , "Desc": "User: Blinder sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Blinder_sys"},
-		{"NodeType": "User", "ID": "2", "Name": "Heating_sys" , "Desc": "User: Heating sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Heating_sys"},
-		{"NodeType": "User", "ID": "3", "Name": "Owner_user" , "Desc": "User: owner user", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Owner_user"},
-		{"NodeType": "Obj", "ID": "4", "Name": "Temperature_sensor1" , "Desc": "Object: Temperature sensor 1", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor1"},
-		{"NodeType": "Obj", "ID": "5", "Name": "Temperature_sensor2" , "Desc": "Object: Temperature sensor 2", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor2"},
-		{"NodeType": "Obj", "ID": "6", "Name": "Central_sys" , "Desc": "Object:Central sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Central_sys"},
-		{"NodeType": "U_attr", "ID": "7", "Name": "House_sys" , "Desc": "Attribute: House sys"},
-		{"NodeType": "U_attr", "ID": "8", "Name": "Administrator" , "Desc": "Attribute: Administrator"},
+		{"NodeType": "Consumer", "ID": "1", "Name": "Blinder_sys" , "Desc": "User: Blinder sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Blinder_sys"},
+		{"NodeType": "Consumer", "ID": "2", "Name": "Heating_sys" , "Desc": "User: Heating sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Heating_sys"},
+		{"NodeType": "Consumer", "ID": "3", "Name": "Owner_user" , "Desc": "User: owner user", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Owner_user"},
+		{"NodeType": "Producer", "ID": "4", "Name": "Temperature_sensor1" , "Desc": "Object: Temperature sensor 1", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor1"},
+		{"NodeType": "Producer", "ID": "5", "Name": "Temperature_sensor2" , "Desc": "Object: Temperature sensor 2", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Temperature_sensor2"},
+		{"NodeType": "Producer", "ID": "6", "Name": "Central_sys" , "Desc": "Object:Central sys", "IP": "105.105.10.987", "Port": "8080", "AuthenticationInfo": "Central_sys"},
+		{"NodeType": "S_attr", "ID": "7", "Name": "House_sys" , "Desc": "Attribute: House sys"},
+		{"NodeType": "S_attr", "ID": "8", "Name": "Administrator" , "Desc": "Attribute: Administrator"},
 		{"NodeType": "O_attr", "ID": "9", "Name": "Outside" , "Desc": "Attribute: Outside"},
 		{"NodeType": "O_attr", "ID": "10", "Name": "Inside" , "Desc": "Attribute:Inside"},
 		{"NodeType": "O_attr", "ID": "11", "Name": "Status" , "Desc": "Attribute: Status"},
@@ -20,8 +20,8 @@
 	],
 	"ArrowheadService":
 	[
-		{"NodeType": "Oper", "ID": "13", "Name": "get_temp" , "Desc": "Operation:Read the temperature", "Metadata": "get_temp metadata"},
-		{"NodeType": "Oper", "ID": "14", "Name": "get_status" , "Desc": "Operation:Read the status", "Metadata": "get_status metadata"},
+		{"NodeType": "Service", "ID": "13", "Name": "get_temp" , "Desc": "Operation:Read the temperature", "Metadata": "get_temp metadata"},
+		{"NodeType": "Service", "ID": "14", "Name": "get_status" , "Desc": "Operation:Read the status", "Metadata": "get_status metadata"},
 	],
 	"Assignment":
 	[
