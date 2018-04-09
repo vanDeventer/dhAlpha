@@ -1,4 +1,6 @@
 # Certificate Generation for Systems to authenticate themselves in an Arrowhead Framework Local Cloud
+The certificates that you generate here should remain on your system or local repository and not be pushed back up to the cloud repository.
+
 ## root CA private key:
 To generate a local cloud Certificate Authority (CA), (which will be a system?)
 ```shell
@@ -30,7 +32,8 @@ Email Address []:a@b.com
 ```
 
 
-## AAA server:
+## AAA System:
+
 ```
 openssl ecparam -name secp256r1 -genkey | openssl ec -aes-256-cbc -out AAA_Server/private/aaa_server_private_key.pem
 openssl req -config openssl.cnf -new -key AAA_Server/private/aaa_server_private_key.pem -out AAA_Server/csr/aaa_server_csr.pem
@@ -41,8 +44,9 @@ keytool -list -v -keystore AAA_Server\certs\aaa_server_keystore.jks
 keytool -import -file root/certs/root_cert.pem -alias root -keystore AAA_Server/certs/aaa_server_truststore.jks -storepass password -noprompt
 ```
 
-## Producer:
-The producer in this case is the weather station. We shall have the Mulle temperature sensors and the valve, but the letters are constrained devices.
+## Producers:
+The producer in this case is the weather station. We shall have the Mulle temperature sensors and valve, but the latter are constrained devices for which we have no security currently.
+
 ```
 openssl ecparam -name secp256r1 -genkey | openssl ec -aes-256-cbc -out Producer/private/producer_private_key.pem
 openssl req -config openssl.cnf -new -key Producer/private/producer_private_key.pem -out Producer/csr/producer_csr.pem
@@ -54,8 +58,14 @@ keytool -import -file root/certs/root_cert.pem -alias root -keystore Producer/ce
 keytool -import -file AAA_Server/certs/aaa_server_cert.pem -alias server-cert -keystore Producer/certs/producer_truststore.jks -storepass password -noprompt
 ```
 
-### Consumer:
-The consumers are the home owner, the district heating application, and the blinder system to start with.
+### Consumers:
+The consumers are to start with: 
+
+- the home owner, 
+- the district heating application, and 
+- the blinder system .
+
+
 ```
 openssl ecparam -name secp256r1 -genkey | openssl ec -aes-256-cbc -out Consumer/private/consumer_private_key.pem
 openssl req -config openssl.cnf -new -key Consumer/private/consumer_private_key.pem -out Consumer/csr/consumer_csr.pem
