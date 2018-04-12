@@ -1,0 +1,4 @@
+com\WSClient\Definitions.class
+com\WSClient\AccountingInfo.class
+com\WSClient\AcceptedTokens.class
+com\WSClient\Consumer.class
